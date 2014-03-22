@@ -68,7 +68,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Banner.html" />
     <Content Include="Content\bootstrap\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
