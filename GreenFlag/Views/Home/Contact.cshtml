@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="/rotator/allinone_bannerRotator.css" rel="stylesheet" type="text/css">
+<style>
+    #cont1, #cont2 {
+        color: #333333;
+    }
+
+    #cont1 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    #cont2 {
+        font-size: 24px;
+        line-height: 32px;
+        width: 50%;
+    }
+</style>
+<div id="rotator">
+    <ul>
+        <li data-bottom-thumb="/Content/images/contact.jpg" data-text-id="#contactText"><img src="/Content/images/contact2.jpg" alt="" /></li>
+    </ul>
+
+    <div id="contactText" class="allinone_contentslider_texts">
+        <div id="cont1" class="rotator-text-line rotator-text-line-responsive" data-initial-left="830" data-initial-top="130" data-final-left="830" data-final-top="130" data-duration="0.5" data-fade-start="0" data-delay="0">Contact Us</div>
+        <div id="cont2" class="rotator-text-line rotator-text-line-responsive" data-initial-left="500" data-initial-top="220" data-final-left="500" data-final-top="220" data-duration="0.5" data-fade-start="0" data-delay="0">We would love to hear from you. To speak with us about an existing or upcoming project, or for any other inquiry, please fill out and submit the form below.</div>
+    </div>
+</div>
+<div style="margin-top:50px;">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 text-center"  >
+            <img class="img-circle" data-src="holder.js/200x200" alt="200" src="/Content/Images/phoneIcon.jpg" style="width: 200px; height: 200px;">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4   text-center">
+            <img class="img-circle" data-src="holder.js/200x200" alt="200" src="/Content/Images/emailIcon.jpg" style="width: 200px; height: 200px;">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4   text-center">
+
+            <img class="img-circle" data-src="holder.js/200x200" alt="200" src="/Content/Images/social.jpg" style="width: 200px; height: 200px;">
+
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container marketing">
+
+    <form role="form">
+        <div class="form-group">
+            <label for="contactName">Name</label>
+            <input class="form-control" name="contactName" id="contactName" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input class="form-control" name="company" id="company" placeholder="Enter Company Name">
+
+        </div>
+        <div class="form-group">
+            <label for="emailAddress">Email address</label>
+            <input type="email" name="emailAddress" class="form-control" id="emailAddress" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Password</label>
+            <input class="form-control" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number">
+
+        </div>
+        <div class="form-group">
+            <label for="inquiry">Inquiry</label>
+            <textarea class="form-control" name="inquiry" id="inquiry"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+@section scripts{
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="/rotator/js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <script src="/rotator/js/allinone_bannerRotator.js" type="text/javascript"></script>
+    <script>
+        jQuery(function () {
+
+            jQuery('#rotator').allinone_bannerRotator({
+                skin: 'suprise',
+                width: 1920,
+                height: 600,
+                width100Proc: true,
+                responsive: true,
+                firstImg: 0,
+                autoPlay: 6,
+                loop: false,
+                showBottomNav: false,
+                showCircleTimer: false
+            });
+
+
+        });
+    </script>
+}

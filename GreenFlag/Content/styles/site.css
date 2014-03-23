@@ -1,12 +1,18 @@
-﻿#logo {
-    padding-top: 5px;
+﻿a.navbar-brand {
+    padding: 5px 0px 5px 0px;
+}
+#logo {
+        width: 180px;
+        margin: auto;
+
 }
 
-    #logo img {
-        width: 180px;
-        height: 75px;
-    }
+#logo img{    
+    
+    width: 180px;
+    height: 75px;
 
+}
 .navbar {
     margin-bottom: 0px;
     min-height: 90px;
@@ -49,8 +55,8 @@
     color: #ffffff;
 }
 
-#bannerWrap {
-    margin-bottom: 70px;
+.container.marketing {
+    margin-top: 70px;
 }
 
 #bd1 {
