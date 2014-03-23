@@ -1,22 +1,33 @@
-﻿.navbar {
+﻿#logo {
+    padding-top: 5px;
+}
+
+    #logo img {
+        width: 180px;
+        height: 75px;
+    }
+
+.navbar {
     margin-bottom: 0px;
     min-height: 90px;
     border-radius: 0px;
+    border-color: #000000;
 }
 
 .navbar-default {
-    background-color: #475F43;
-    border-color: #0F1D0D;
+    background-color: #222222;
+    border-color: #000000;
     -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     z-index: 99;
 }
-
-
-#logoWrap {
-    padding: 5px 0px 3px 0px;
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #222222;
+    text-decoration: underline;
 }
+
+
 
 #bannerWrap * {
     -moz-box-sizing: content-box;
@@ -36,6 +47,10 @@
     text-rendering: optimizelegibility;
     line-height: 38px;
     color: #ffffff;
+}
+
+#bannerWrap {
+    margin-bottom: 70px;
 }
 
 #bd1 {
@@ -62,20 +77,22 @@
     text-shadow: 1px 1px 1px #192e16;
     color: #192e16;
 }
+
 #proc1 {
-        color: #192e16;
-    }
+    color: #192e16;
+}
 
 #proc3 {
-        -webkit-text-shadow: 1px 1px 1px #192e16;
-        -webkit-font-smoothing: antialiased !important;
-        text-shadow: 1px 1px 1px rgb(25, 46, 22);
-    }
+    -webkit-text-shadow: 1px 1px 1px #192e16;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgb(25, 46, 22);
+}
 
 proc2 {
-        -webkit-font-smoothing: antialiased !important;
-        color: #333333;
-    }
+    -webkit-font-smoothing: antialiased !important;
+    color: #333333;
+}
+
 #win81 {
     font-size: 42px;
     line-height: 50px;
@@ -106,20 +123,19 @@ proc2 {
 
 
 #fin3 {
-
     color: #439c06;
     font-style: italic;
 }
 /* End Rotator */
 @media (max-width:768px) {
-    #logoWrap img{ width: 80%;height: 80%;}
+    #logo img {
+        width: 15%;
+        height: 15%;
+    }
+
     .navbar {
         margin-bottom: 0px;
         min-height: 40px;
         border-radius: 0px;
     }
-
 }
-
-
-
