@@ -1,18 +1,17 @@
 ﻿a.navbar-brand {
     padding: 5px 0px 5px 0px;
 }
+
 #logo {
-        width: 180px;
-        margin: auto;
-
-}
-
-#logo img{    
-    
     width: 180px;
-    height: 75px;
-
+    margin: auto;
 }
+
+    #logo img {
+        width: 180px;
+        height: 75px;
+    }
+
 .navbar {
     margin-bottom: 0px;
     min-height: 90px;
@@ -28,10 +27,11 @@
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
     z-index: 99;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #222222;
-    text-decoration: underline;
-}
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        background-color: #222222;
+        text-decoration: underline;
+    }
 
 
 
@@ -133,15 +133,89 @@ proc2 {
     font-style: italic;
 }
 /* End Rotator */
-@media (max-width:768px) {
-    #logo img {
-        width: 15%;
-        height: 15%;
+/*Home*/
+#serviceOptions, #contactOptions {
+    margin-top: 50px;
+}
+
+    #serviceOptions .img-circle, #serviceOptions .img-circle {
+        width: 200px;
+        height: 200px;
     }
+/*End Home*/
+/*Contact*/
+#cont1, #cont2 {
+    color: #333333;
+}
+
+#cont1 {
+    font-size: 52px;
+    line-height: 60px;
+}
+
+#cont2 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
+}
+
+/*End Contact*/
+/*Services*/
+
+/*End Services*/
+@media (max-width:768px) {
+    #logo {
+        width: 72px;
+        height: 30px;
+    }
+
+        #logo img {
+            width: 72px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+        }
 
     .navbar {
         margin-bottom: 0px;
-        min-height: 40px;
+        min-height: 30px;
         border-radius: 0px;
     }
+
+    .navbar-default {
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+        z-index: 99;
+    }
+
+    .navbar .container-fluid, .navbar-header {
+        height: 30px;
+    }
+
+    .navbar-brand {
+        height: 0px;
+    }
+
+    #serviceOptions, #contactOptions {
+        margin-top: 30px;
+    }
+
+        #serviceOptions .img-circle, #contactOptions .img-circle {
+            width: 120px;
+            height: 120px;
+        }
+
+    ul.nav.navbar-nav {
+        background: #222222;
+    }
+
+    .navbar-default .navbar-nav > .active > a {
+        background: #333333;
+    }
+}
+
+#social area {
+    outline: none;
+    outline-width: 0;
 }

@@ -4,24 +4,11 @@
 }
 <link href="/rotator/allinone_bannerRotator.css" rel="stylesheet" type="text/css">
 <style>
-    #cont1, #cont2 {
-        color: #333333;
-    }
 
-    #cont1 {
-        font-size: 52px;
-        line-height: 60px;
-    }
-
-    #cont2 {
-        font-size: 24px;
-        line-height: 32px;
-        width: 50%;
-    }
 </style>
-<div id="rotator">
+<div id="rotator" style="display:none;">
     <ul>
-        <li data-bottom-thumb="/Content/images/contact.jpg" data-text-id="#contactText"><img src="/Content/images/contact2.jpg" alt="" /></li>
+        <li data-bottom-thumb="/Content/images/contact.jpg" data-text-id="#contactText"><img src="/Content/images/contact.jpg" alt="" /></li>
     </ul>
 
     <div id="contactText" class="allinone_contentslider_texts">
@@ -29,32 +16,29 @@
         <div id="cont2" class="rotator-text-line rotator-text-line-responsive" data-initial-left="500" data-initial-top="220" data-final-left="500" data-final-top="220" data-duration="0.5" data-fade-start="0" data-delay="0">We would love to hear from you. To speak with us about an existing or upcoming project, or for any other inquiry, please fill out and submit the form below.</div>
     </div>
 </div>
-<div style="margin-top:50px;">
+<div id="contactOptions">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 text-center"  >
-            <img class="img-circle" data-src="holder.js/200x200" alt="200" src="/Content/Images/phoneIcon.jpg" style="width: 200px; height: 200px;">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <img class="img-circle"  alt="200" src="/Content/Images/phoneIcon.jpg">
+            <h4>1-888-777-5555</h4>
+
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4   text-center">
-            <img class="img-circle" data-src="holder.js/200x200" alt="200" src="/Content/Images/emailIcon.jpg" style="width: 200px; height: 200px;">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <img class="img-circle"  alt="200" src="/Content/Images/emailIcon.jpg">
+            <h4>inquiries@greenflagsoftware.com</h4>
+
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4   text-center">
 
-            <img class="img-circle" data-src="holder.js/200x200" alt="200" src="/Content/Images/social.jpg" style="width: 200px; height: 200px;">
+            <img class="img-circle"  alt="200" src="/Content/Images/social.jpg" usemap="#social">
 
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <h4>Connect</h4>
+
         </div>
     </div>
 </div>
 
-
+<map id="social" name="social"><area shape="rect" alt="" title="" coords="37,61,112,135" href="http://www.facebook.com" target="_blank" /><area shape="rect" alt="" title="" coords="124,61,201,136" href="http://www.linkedin.com" target="_blank" /><area shape="rect" alt="" title="" coords="54,142,189,215" href="http://www.twitter.com" target="_blank" /></map>
 <div class="container marketing">
 
     <form role="form">
