@@ -107,6 +107,16 @@ a.navbar-brand {
     color: #192e16;
 }
 
+.page-title h1{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+}
+.overview {
+    margin-bottom: 20px;
+}
 #proc1 {
     color: #192e16;
 }
@@ -198,7 +208,13 @@ proc2 {
     float: left;
     background: #000000;
 }
-
+#technologiesWrap .row{
+    margin: 0px;
+    padding: 0px;
+}
+#technologiesWrap .section {
+    display: none;
+}
 #technologiesWrap .list-group-item:first-child {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -217,11 +233,7 @@ proc2 {
 #technologiesWrap #technologiesNav a.list-group-item.active {
     border-color: #ffffff;
 }
-/*End Technologies*/
-/*End Contact*/
-/*Services*/
 
-/*End Services*/
 @media (max-width:768px) {
     #logo {
         width: 72px;
@@ -301,5 +313,12 @@ proc2 {
 
     .col-wrap {
         overflow: hidden;
+    }
+       .page-title h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: normal;
+        font-family: 'Oswald', sans-serif;
     }
 }

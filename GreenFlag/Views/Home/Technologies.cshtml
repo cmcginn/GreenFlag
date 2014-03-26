@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Technologies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="technologiesWrap">
+    <div id="col1" class="full-height">
+        <div id="overview" class="row section">
+            <div class="col-md-10 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-10 text-center page-title">
+                        <h1>Technologies</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 text-center page-title overview">
+                        <h3>Overview</h3>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <div id="dataAccess" class="row section">
+            <div class="col-md-10 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-10 text-center page-title">
+                        <h1>Data Access</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 text-center page-title overview">
+                        <h3>Overview</h3>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="col2" class="full-height">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div id="technologiesNav" class="list-group">
+                    <a href="#" class="list-group-item active" data-toggle-section="#overview">Overview</a>
+                    <a href="#" class="list-group-item" data-toggle-section="#dataAccess">Data Access</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script>
+        $(function() {
+
+            function showSection(id) {
+                
+                $('#technologiesWrap .section').hide();
+                console.log($(id));
+                $(id).show();
+            };
+
+            showSection('#overview');
+            $('#technologiesNav .list-group-item').on('click', function () {
+                $('#technologiesNav .list-group-item').removeClass('active');
+                $(this).addClass('active');
+                showSection($(this).data('toggle-section'));
+            });
+        });
+    </script>
+}
