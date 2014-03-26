@@ -23,6 +23,11 @@ namespace GreenFlag
                  defaults: new { controller = "Home", action = "Services", id = UrlParameter.Optional }
              );
             routes.MapRoute(
+                 name: "Technologies",
+                 url: "Technologies",
+                 defaults: new { controller = "Home", action = "Technologies", id = UrlParameter.Optional }
+             );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

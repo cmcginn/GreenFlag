@@ -116,12 +116,25 @@
     <Content Include="Banner.html" />
     <Content Include="Contact.html" />
     <Content Include="Content\bootstrap\custom.less" />
+    <Content Include="Content\images\circleIcon.jpg" />
+    <Content Include="Content\images\contact.jpg" />
+    <Content Include="Content\images\desktopIcon.jpg" />
+    <Content Include="Content\images\email.jpg" />
+    <Content Include="Content\images\emailIcon.jpg" />
+    <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\linkedIn.png" />
+    <Content Include="Content\images\mobileIcon.jpg" />
+    <Content Include="Content\images\phoneIcon.jpg" />
+    <Content Include="Content\images\social.jpg" />
+    <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\wwwIcon.jpg" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_Rotator.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Technologies.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

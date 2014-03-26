@@ -24,5 +24,10 @@ namespace GreenFlag.Controllers
         {
             return View();
         }
+
+        public ActionResult Technologies()
+        {
+            return View();
+        }
 	}
 }
