@@ -212,9 +212,10 @@ proc2 {
     height: 100%;
     top: 0px;
     bottom: 0px;
-    background: #000000;
+    /*background: #000000;*/
     left: 60%;
     width: 40%;
+    background:url('/content/images/techBg.jpg')
 }
 
 #technologiesWrap .row {
@@ -248,7 +249,10 @@ proc2 {
     #technologiesWrap #technologiesNav a.list-group-item.active {
         border-color: #ffffff;
     }
-
+    #technologiesWrap .featurette-divider{ width: 80%;}
+    #technologiesWrap a.list-group-item:hover {
+        color: #439c06;
+    }
 @media (max-width:768px) {
     #logo {
         width: 72px;
